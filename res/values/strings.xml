@@ -150,16 +150,16 @@
     <string name="qs_style_round">Android 11</string>
 
     <!-- QS columns customization -->
-    <string name="qs_columns">QS columns in portrait</string>
+    <string name="qs_columns">QS columns in portrait (SystemUI restart required)</string>
     <string name="qs_columns_min" translatable="false">2</string>
     <string name="qs_columns_max" translatable="false">5</string>
-    <string name="qs_columns_landscape">QS columns in landscape</string>
+    <string name="qs_columns_landscape">QS columns in landscape (SystemUI restart required)</string>
     <string name="qs_columns_landscape_min" translatable="false">@string/qs_columns_min</string>
     <string name="qs_columns_landscape_max" translatable="false">6</string>
-    <string name="qqs_columns">QQS columns in portrait</string>
+    <string name="qqs_columns">QQS columns in portrait (SystemUI restart required)</string>
     <string name="qqs_columns_min" translatable="false">@string/qs_columns_min</string>
     <string name="qqs_columns_max" translatable="false">@string/qs_columns_max</string>
-    <string name="qqs_columns_landscape">QQS columns in landscape</string>
+    <string name="qqs_columns_landscape">QQS columns in landscape (SystemUI restart required)</string>
     <string name="qqs_columns_landscape_min" translatable="false">@string/qs_columns_landscape_min</string>
     <string name="qqs_columns_landscape_max" translatable="false">@string/qs_columns_landscape_max</string>
 
@@ -252,7 +252,7 @@
 
     <!-- Screen off animation -->
     <string name="default_string">Default</string>
-    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_title">Screen off animation (SystemUI restart required)</string>
     <string name="screen_off_animation_crt" translatable="false">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>
 
