@@ -81,11 +81,18 @@
             android:summary="@string/ignore_window_secure_summary"
             android:defaultValue="false"/>
 
-	<!-- Double tap to sleep -->
+	<!-- Statusbar Double tap to sleep -->
         <com.blaze.house.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"
             android:title="@string/status_bar_double_tap_to_sleep_title"
             android:summary="@string/status_bar_double_tap_to_sleep_summary"
+            android:defaultValue="false" />
+
+    <!-- Lockscreen Double tap to sleep -->
+        <com.blaze.house.preferences.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_lockscreen"
+            android:title="@string/lockscreen_double_tap_to_sleep_title"
+            android:summary="@string/lockscreen_double_tap_to_sleep_summary"
             android:defaultValue="false" />
 
 	<com.blaze.house.preferences.SystemSettingSwitchPreference
