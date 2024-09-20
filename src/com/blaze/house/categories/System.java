@@ -39,14 +39,17 @@ public class System extends SettingsPreferenceFragment implements
 
     private static final String TAG = "System";
 
+    private static final String KEY_PIXEL_SPOOF = "use_pixel_spoof";
     private static final String KEY_GAMES_SPOOF = "use_games_spoof";
     private static final String KEY_PHOTOS_SPOOF = "use_photos_spoof";
     private static final String KEY_NETFLIX_SPOOF = "use_netflix_spoof";
 
+    private static final String SYS_PIXEL_SPOOF = "persist.sys.pixelprops.pi";
     private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_NETFLIX_SPOOF = "persist.sys.spoof_netflix";
 
+    private SwitchPreference mPixelSpoof;
     private SwitchPreference mGamesSpoof;
     private SwitchPreference mPhotosSpoof;
     private SwitchPreference mNetFlixSpoof;
@@ -60,6 +63,10 @@ public class System extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
         ContentResolver resolver = getActivity().getContentResolver();
+
+        mPixelSpoof = (SwitchPreference) prefScreen.findPreference(KEY_PIXEL_SPOOF);
+        mPixelSpoof.setChecked(SystemProperties.getBoolean(SYS_PIXEL_SPOOF, true));
+        mPixelSpoof.setOnPreferenceChangeListener(this);
 
         mGamesSpoof = (SwitchPreference) prefScreen.findPreference(KEY_GAMES_SPOOF);
         mGamesSpoof.setChecked(SystemProperties.getBoolean(SYS_GAMES_SPOOF, false));
@@ -91,7 +98,12 @@ public class System extends SettingsPreferenceFragment implements
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         final String key = preference.getKey();
-        if (preference == mGamesSpoof) {
+        if (preference == mPixelSpoof) {
+            boolean value = (Boolean) objValue;
+            SystemProperties.set(SYS_PIXEL_SPOOF, value ? "true" : "false");
+            SystemPropPoker.getInstance().poke();
+            return true;
+        } else if (preference == mGamesSpoof) {
             boolean value = (Boolean) objValue;
             SystemProperties.set(SYS_GAMES_SPOOF, value ? "true" : "false");
             SystemPropPoker.getInstance().poke();

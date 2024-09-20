@@ -492,6 +492,10 @@
         The Island notification feature, inspired by iOS\'s Dynamic Island, transforms Android\'s heads-up notifications into quick-access and compact notification utility.\n\nIsland Quick Access Controls includes the following features:\n1. Tap island notification to quick answer phone calls.\n2. Long press island notification to reject phone calls.\n3. Long press island notification to expand the island notification preview.
     </string>
     
+    <!-- Spoof Play Integrity -->
+    <string name="use_pixel_spoof_title">Spoof Play Integrity </string>
+    <string name="use_pixel_spoof_summery">Spoof your device as different model to pass Play Integrity checks</string>
+
     <!-- Unlimited google photos storage -->
     <string name="use_photos_spoof_title">Unlimited Photos storage</string>
     <string name="use_photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to provide unlimited storage for backup</string>

@@ -128,6 +128,13 @@
 
      <!-- Unlimited google photos storage -->
     <SwitchPreference
+        android:key="use_pixel_spoof"
+        android:title="@string/use_pixel_spoof_title"
+        android:summary="@string/use_pixel_spoof_summery"
+        android:defaultValue="true" />
+
+     <!-- Unlimited google photos storage -->
+    <SwitchPreference
         android:key="use_photos_spoof"
         android:title="@string/use_photos_spoof_title"
         android:summary="@string/use_photos_spoof_summary"
