@@ -123,6 +123,77 @@ public class System extends SettingsPreferenceFragment implements
         super.onPause();
     }
 
+    private fun updateKeyboxSummaries() {
+        val keyboxData = Settings.Secure.getString(
+            requireContext().contentResolver,
+            Settings.Secure.KEYBOX_DATA
+        )
+
+        if (keyboxData != null) {
+            val keyboxInfo = parseKeyboxInfo(keyboxData)
+            mKeyboxDataPreference.summary = getString(
+                R.string.keybox_data_summary_loaded,
+                keyboxInfo.type,
+                keyboxInfo.certCount,
+                keyboxInfo.timestamp
+            )
+            mKeyboxDeletePreference.isEnabled = true
+        } else {
+            mKeyboxDataPreference.summary = getString(R.string.keybox_data_summary)
+            mKeyboxDeletePreference.isEnabled = false
+        }
+    }
+
+    private data class KeyboxInfo(
+        val type: String,
+        val certCount: Int,
+        val timestamp: String
+    )
+
+    private fun parseKeyboxInfo(xml: String): KeyboxInfo {
+        var hasEcdsaKey = false
+        var hasRsaKey = false
+        var certCount = 0
+
+        try {
+            val parser = XmlPullParserFactory.newInstance().newPullParser()
+            parser.setInput(xml.reader())
+
+            var eventType = parser.next()
+            while (eventType != XmlPullParser.END_DOCUMENT) {
+                if (eventType == XmlPullParser.START_TAG) {
+                    when (parser.name) {
+                        "Key" -> {
+                            val alg = parser.getAttributeValue(null, "algorithm")?.lowercase()
+                            when (alg) {
+                                "ecdsa" -> hasEcdsaKey = true
+                                "rsa" -> hasRsaKey = true
+                            }
+                        }
+                        "Certificate" -> certCount++
+                    }
+                }
+                eventType = parser.next()
+            }
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to parse keybox info", e)
+        }
+
+        val type = when {
+            hasEcdsaKey && hasRsaKey -> "RSA + ECDSA"
+            hasEcdsaKey -> "ECDSA"
+            hasRsaKey -> "RSA"
+            else -> "Unknown"
+        }
+
+        return KeyboxInfo(
+            type = type,
+            certCount = certCount,
+            timestamp = java.text.SimpleDateFormat("yyyy-MM-dd HH:mm", java.util.Locale.getDefault())
+                .format(java.util.Date())Add commentMore actions
+        )
+    }
+    
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         addPreferencesFromResource(R.xml.system)
 
@@ -138,6 +209,8 @@ public class System extends SettingsPreferenceFragment implements
             deleteKeyboxData()
             true
         }
+
+        updateKeyboxSummaries()
     }
 
     private fun openKeyboxFileSelector() {
@@ -154,6 +227,7 @@ public class System extends SettingsPreferenceFragment implements
             Settings.Secure.KEYBOX_DATA,
             null
         )
+        updateKeyboxSummaries()
         Toast.makeText(context, R.string.keybox_data_cleared, Toast.LENGTH_SHORT).show()
     }
 
@@ -178,6 +252,7 @@ public class System extends SettingsPreferenceFragment implements
                             Settings.Secure.KEYBOX_DATA,
                             xml
                         )
+                        updateKeyboxSummaries()
                         Toast.makeText(context, R.string.keybox_data_loaded, Toast.LENGTH_SHORT).show()
                     } else {
                         Toast.makeText(context, R.string.keybox_data_invalid, Toast.LENGTH_SHORT).show()
