@@ -17,7 +17,7 @@
     xmlns:lineage="http://schemas.android.com/apk/res-auto"
     android:title="@string/dw_wallpaper_enabled_title">
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
+    <com.scandium.home.preferences.SystemSettingSwitchPreference
         android:key="depth_wallpaper_enabled"
         android:title="@string/dw_wallpaper_enabled_title"
         android:summary="@string/dw_wallpaper_enabled_summary"
@@ -30,7 +30,7 @@
         android:summary="@string/dw_file_header_select_summary"
         android:persistent="false" />
 
-    <com.blaze.house.preferences.SystemSettingSeekBarPreference
+    <com.scandium.home.preferences.SystemSettingSeekBarPreference
         android:key="depth_wallpaper_opacity"
         android:title="@string/dw_wallpaper_opacity_title"
         android:max="100"
@@ -39,7 +39,7 @@
         settings:units="%"
         android:defaultValue="100" />
 
-    <com.blaze.house.preferences.SystemSettingSeekBarPreference
+    <com.scandium.home.preferences.SystemSettingSeekBarPreference
         android:key="depth_wallpaper_offset_x"
         android:title="@string/depth_wallpaper_offset_x_title"
         android:max="0"
@@ -48,7 +48,7 @@
         settings:units="%"
         android:defaultValue="0" />
 
-    <com.blaze.house.preferences.SystemSettingSeekBarPreference
+    <com.scandium.home.preferences.SystemSettingSeekBarPreference
         android:key="depth_wallpaper_offset_y"
         android:title="@string/depth_wallpaper_offset_y_title"
         android:max="0"

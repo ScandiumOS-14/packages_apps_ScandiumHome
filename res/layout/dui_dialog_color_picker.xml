@@ -53,7 +53,7 @@
 
     </LinearLayout>
 
-    <com.blaze.house.colorpicker.ColorPickerView
+    <com.scandium.home.colorpicker.ColorPickerView
         android:id="@+id/color_picker_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
         android:orientation="horizontal"
         android:layout_marginBottom="10dp">
 
-        <com.blaze.house.colorpicker.ColorPickerPanelView
+        <com.scandium.home.colorpicker.ColorPickerPanelView
             android:id="@+id/old_color_panel"
             android:layout_width="0px"
             android:layout_height="fill_parent"
@@ -89,12 +89,11 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp" />
 
-        <com.blaze.house.colorpicker.ColorPickerPanelView
+        <com.scandium.home.colorpicker.ColorPickerPanelView
             android:id="@+id/new_color_panel"
             android:layout_width="0px"
             android:layout_height="wrap_content"
             android:layout_weight="0.5" />
 
     </LinearLayout>
-
 </LinearLayout>

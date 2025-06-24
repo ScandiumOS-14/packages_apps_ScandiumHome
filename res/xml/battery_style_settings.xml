@@ -7,21 +7,21 @@
     <PreferenceCategory
         android:title="@string/status_bar_battery_category_title" >
 
-         <com.blaze.house.preferences.SystemSettingListPreference
+         <com.scandium.home.preferences.SystemSettingListPreference
             android:key="status_bar_battery_style"
             android:title="@string/status_bar_battery_style_title"
             android:entries="@array/status_bar_battery_style_entries"
             android:entryValues="@array/status_bar_battery_style_values"
             android:defaultValue="0" />
 
-         <com.blaze.house.preferences.SystemSettingListPreference
+         <com.scandium.home.preferences.SystemSettingListPreference
             android:key="status_bar_show_battery_percent"
             android:title="@string/status_bar_battery_percent_title"
             android:entries="@array/status_bar_battery_percent_entries"
             android:entryValues="@array/status_bar_battery_percent_values"
             android:defaultValue="0" />
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="status_bar_battery_text_charging"
             android:title="@string/status_bar_battery_text_charging_title"
             android:summary="@string/status_bar_battery_text_charging_summary"
@@ -34,7 +34,7 @@
         android:title="@string/qs_battery_category_title" >
 
         <!-- Battery styles -->
-        <com.blaze.house.preferences.SystemSettingListPreference
+        <com.scandium.home.preferences.SystemSettingListPreference
             android:key="qs_battery_style"
             android:title="@string/status_bar_battery_style_title"
             android:entries="@array/qs_battery_style_entries"
@@ -42,7 +42,7 @@
             android:defaultValue="-1" />
 
         <!-- Battery percent -->
-        <com.blaze.house.preferences.SystemSettingListPreference
+        <com.scandium.home.preferences.SystemSettingListPreference
             android:key="qs_show_battery_percent"
             android:title="@string/status_bar_battery_percent_title"
             android:entries="@array/status_bar_battery_percent_entries"
@@ -59,10 +59,9 @@
         <!-- Battery styles -->
         <Preference
             android:key="misc_batterysb"
-            android:fragment="com.blaze.house.fragments.MiscBatterySettings"
+            android:fragment="com.scandium.home.fragments.MiscBatterySettings"
             android:title="Misc Battery Icon Settings"
             android:summary="customize statusbar battery icon settings" />
 
     </PreferenceCategory>
-
 </PreferenceScreen>

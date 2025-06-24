@@ -19,7 +19,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
+    <com.scandium.home.preferences.SystemSettingSwitchPreference
         android:key="lockscreen_battery_info"
         android:title="@string/lockscreen_battery_info_title"
         android:summary="@string/lockscreen_battery_info_summary"
@@ -34,7 +34,7 @@
             android:key="udfps_settings"
             android:title="@string/udfps_settings_title"
             android:summary="@string/udfps_settings_summary"
-            android:fragment="com.blaze.house.fragments.UdfpsSettings" />
+            android:fragment="com.scandium.home.fragments.UdfpsSettings" />
 
     </PreferenceCategory>
 
@@ -42,7 +42,7 @@
         android:key="lockscreen_ui_finterprint_category"
         android:title="@string/fingerprint_category">
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="enable_ripple_effect"
             android:title="@string/enable_fingerprint_ripple_effect_title"
             android:summary="@string/enable_fingerprint_ripple_effect_summary"
@@ -68,14 +68,14 @@
             android:key="android.theme.customization.lockscreen_clock_font"
             android:title="@string/lockscreen_clock_category_title"
             android:summary="@string/lockscreen_clock_category_summary"
-            android:fragment="com.blaze.house.fragments.LockScreenClock" />
+            android:fragment="com.scandium.home.fragments.LockScreenClock" />
 
     </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/general_category">
 
-	<com.blaze.house.preferences.SystemSettingListPreference
+	<com.scandium.home.preferences.SystemSettingListPreference
             android:key="screen_off_animation"
             android:title="@string/screen_off_animation_title"
             android:entries="@array/screen_off_animation_entries"
@@ -83,13 +83,13 @@
             android:summary="%s"
             android:defaultValue="0" />
 
-	<com.blaze.house.preferences.SystemSettingSwitchPreference
+	<com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="secure_lockscreen_qs_disabled"
             android:title="@string/disable_qs_title"
             android:summary="@string/disable_qs_summary"
             android:defaultValue="false" />
 
-	<com.blaze.house.preferences.GlobalSettingSwitchPreference
+	<com.scandium.home.preferences.GlobalSettingSwitchPreference
             android:key="wake_when_plugged_or_unplugged"
             android:title="@string/wakeup_when_plugged_unplugged_title"
             android:summary="@string/wakeup_when_plugged_unplugged_summary"
@@ -104,7 +104,7 @@
 
           <Preference
                android:key="pulse_settings"
-               android:fragment="com.blaze.house.fragments.PulseSettings"
+               android:fragment="com.scandium.home.fragments.PulseSettings"
                android:title="@string/pulse_settings"
                android:summary="@string/pulse_settings_summary" />
      </PreferenceCategory>

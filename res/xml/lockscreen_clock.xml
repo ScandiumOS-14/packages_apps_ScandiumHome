@@ -25,7 +25,7 @@
             android:key="lockscreen_preview"
             settings:layout="@layout/lockscreen_preview" />
 
-        <com.blaze.house.preferences.SystemSettingListPreference
+        <com.scandium.home.preferences.SystemSettingListPreference
             android:entries="@array/clock_style_entries"
             android:title="Custom Clock style"
             android:key="clock_style"
@@ -37,7 +37,7 @@
             android:key="depth_wallpaper"
             android:title="@string/dw_wallpaper_enabled_title"
             android:summary="@string/dw_wallpaper_enabled_summary"
-            android:fragment="com.blaze.house.fragments.WallpaperDepth" />
+            android:fragment="com.scandium.home.fragments.WallpaperDepth" />
 
     </PreferenceCategory>
 
@@ -49,48 +49,48 @@
             android:key="lockscreen_widgets_preview"
             settings:layout="@layout/lockscreen_widgets_preview" />
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_widgets_enabled"
             android:title="@string/lockscreen_widgets_enabled_title"
             android:summary="@string/lockscreen_widgets_enabled_summary"
             android:defaultValue="true" />
 
-        <com.blaze.house.preferences.SystemSettingListPreference
+        <com.scandium.home.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
             android:title="@string/main_custom_widgets1"
             android:key="main_custom_widgets1"
             android:entryValues="@array/widget_values" 
             android:summary="%s" />
 
-        <com.blaze.house.preferences.SystemSettingListPreference
+        <com.scandium.home.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
             android:title="@string/main_custom_widgets2"
             android:key="main_custom_widgets2"
             android:entryValues="@array/widget_values"
             android:summary="%s" />
 
-        <com.blaze.house.preferences.SystemSettingListPreference
+        <com.scandium.home.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
             android:title="@string/custom_widgets1"
             android:key="custom_widgets1"
             android:entryValues="@array/widget_values" 
             android:summary="%s" />
 
-        <com.blaze.house.preferences.SystemSettingListPreference
+        <com.scandium.home.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
             android:title="@string/custom_widgets2"
             android:key="custom_widgets2"
             android:entryValues="@array/widget_values"
             android:summary="%s" />
 
-        <com.blaze.house.preferences.SystemSettingListPreference
+        <com.scandium.home.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
             android:title="@string/custom_widgets3"
             android:key="custom_widgets3"
             android:entryValues="@array/widget_values" 
             android:summary="%s" />
 
-        <com.blaze.house.preferences.SystemSettingListPreference
+        <com.scandium.home.preferences.SystemSettingListPreference
             android:entries="@array/widget_entries"
             android:title="@string/custom_widgets4"
             android:key="custom_widgets4"

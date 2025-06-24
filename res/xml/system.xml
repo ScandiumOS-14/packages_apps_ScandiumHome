@@ -23,17 +23,17 @@
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
             android:title="@string/incall_vibrate_disconnect_title"
             android:defaultValue="false" />
@@ -42,20 +42,20 @@
     <PreferenceCategory
         android:title="@string/incall_category" >
 
-        <com.blaze.house.preferences.SystemSettingListPreference
+        <com.scandium.home.preferences.SystemSettingListPreference
             android:key="flashlight_on_call"
             android:title="@string/flashlight_on_call_title"
             android:entries="@array/flashlight_on_call_entries"
             android:entryValues="@array/flashlight_on_call_values"
             android:defaultValue="0" />
 
-	<com.blaze.house.preferences.SystemSettingSwitchPreference
+	<com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="flashlight_on_call_ignore_dnd"
             android:title="@string/flashlight_on_call_ignore_dnd_title"
             android:summary="@string/flashlight_on_call_ignore_dnd_summary"
             android:defaultValue="false" />
 
-        <com.blaze.house.preferences.CustomSeekBarPreference
+        <com.scandium.home.preferences.CustomSeekBarPreference
             android:key="flashlight_on_call_rate"
             android:title="@string/flashlight_on_call_rate_title"
             android:summary="@string/flashlight_on_call_rate_summary"
@@ -69,33 +69,33 @@
         android:key="general_category"
 	android:title="@string/general_category" >
 
-	<com.blaze.house.preferences.SystemSettingSwitchPreference
+	<com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="advanced_reboot"
             android:title="@string/global_actions_advanced_reboot_title"
             android:summary="@string/global_actions_advanced_reboot_summary"
             android:defaultValue="true" />
 
-	<com.blaze.house.preferences.SecureSettingSwitchPreference
+	<com.scandium.home.preferences.SecureSettingSwitchPreference
             android:key="window_ignore_secure"
             android:title="@string/ignore_window_secure_title"
             android:summary="@string/ignore_window_secure_summary"
             android:defaultValue="false"/>
 
 	<!-- Statusbar Double tap to sleep -->
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"
             android:title="@string/status_bar_double_tap_to_sleep_title"
             android:summary="@string/status_bar_double_tap_to_sleep_summary"
             android:defaultValue="false" />
 
     <!-- Lockscreen Double tap to sleep -->
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_lockscreen"
             android:title="@string/lockscreen_double_tap_to_sleep_title"
             android:summary="@string/lockscreen_double_tap_to_sleep_summary"
             android:defaultValue="false" />
 
-	<com.blaze.house.preferences.SystemSettingSwitchPreference
+	<com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="back_gesture_haptic"
             android:title="@string/back_gesture_haptic_title"
             android:summary="@string/back_gesture_haptic_summary"
@@ -107,14 +107,14 @@
         android:key="volume_category"
 	android:title="@string/volume_category" >
 
-	<com.blaze.house.preferences.SystemSettingSwitchPreference
+	<com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="volbtn_music_controls"
             android:title="@string/volume_button_music_control_title"
             android:summary="@string/volume_button_music_control_summary"
 	    android:dependency="volume_rocker_wake"
             android:defaultValue="false" />
 
-	<com.blaze.house.preferences.SystemSettingSwitchPreference
+	<com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="volume_rocker_wake"
             android:title="@string/volume_rocker_wake_title"
             android:summary="@string/volume_rocker_wake_summary"

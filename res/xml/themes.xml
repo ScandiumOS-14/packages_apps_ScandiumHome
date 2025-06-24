@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.blaze.house.preferences.SystemSettingListPreference
+    <com.scandium.home.preferences.SystemSettingListPreference
         android:key="settings_dashboard_style"
         android:title="@string/settings_dashboard_style_title"
         android:entries="@array/settings_dashboard_style_entries"
@@ -15,55 +15,55 @@
         android:key="monet_engine"
         android:title="@string/monet_title"
         android:summary="@string/monet_summary"
-        android:fragment="com.blaze.house.fragments.MonetSettings" />
+        android:fragment="com.scandium.home.fragments.MonetSettings" />
 
     <!-- Theming -->
     <Preference
         android:key="android.theme.customization.fonts"
         android:title="@string/theme_customization_font_title"
         android:summary="@string/theme_customization_font_summary"
-        android:fragment="com.blaze.house.fragments.FontsPicker"/>
+        android:fragment="com.scandium.home.fragments.FontsPicker"/>
 
     <Preference
         android:key="android.theme.customization.icon_pack"
         android:title="@string/theme_customization_icon_pack_title"
         android:summary="@string/theme_customization_icon_pack_summary"
-        android:fragment="com.blaze.house.fragments.StatusbarIcons"/>
+        android:fragment="com.scandium.home.fragments.StatusbarIcons"/>
             
     <Preference
         android:key="android.theme.customization.signal_icon"
         android:title="@string/theme_customization_signal_icon_title"
         android:summary="@string/theme_customization_signal_icon_summary"
-        android:fragment="com.blaze.house.fragments.SignalIcons"/>
+        android:fragment="com.scandium.home.fragments.SignalIcons"/>
 
     <Preference
         android:key="android.theme.customization.wifi_icon"
         android:title="@string/theme_customization_wifi_icon_title"
         android:summary="@string/theme_customization_wifi_icon_summary"
-        android:fragment="com.blaze.house.fragments.WifiIcons"/>      
+        android:fragment="com.scandium.home.fragments.WifiIcons"/>      
 
     <Preference
         android:key="android.theme.customization.adaptive_icon_shape"
         android:title="@string/theme_customization_icon_shape_title"
         android:summary="@string/theme_customization_icon_shape_summary"
-        android:fragment="com.blaze.house.fragments.IconShapes"/>     
+        android:fragment="com.scandium.home.fragments.IconShapes"/>     
 
     <Preference
         android:key="android.theme.customization.brightness_slider"
         android:title="@string/theme_customization_brightness_slider_title"
         android:summary="@string/theme_customization_brightness_slider_summary"
-        android:fragment="com.blaze.house.fragments.BrightnessSlider"/>
+        android:fragment="com.scandium.home.fragments.BrightnessSlider"/>
 
     <Preference
         android:key="android.theme.customization.sb_data"
         android:title="@string/theme_customization_data_title"
         android:summary="@string/theme_customization_data_summary"
-        android:fragment="com.blaze.house.fragments.DataStyles"/>
+        android:fragment="com.scandium.home.fragments.DataStyles"/>
 
     <Preference
         android:key="android.theme.customization.navbar"
         android:title="@string/theme_customization_navbar_title"
         android:summary="@string/theme_customization_navbar_summary"
-        android:fragment="com.blaze.house.fragments.NavbarStyles" />
+        android:fragment="com.scandium.home.fragments.NavbarStyles" />
 
 </PreferenceScreen>

@@ -15,27 +15,27 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="StatusBar Battery Icon Addon">
 
-    <com.blaze.house.preferences.SystemSettingListPreference
+    <com.scandium.home.preferences.SystemSettingListPreference
         android:key="CUSTOM_CHARGE_SYMBOL"
         android:defaultValue="0"
         android:entries="@array/custom_icon_charging_symbol_entries"
         android:entryValues="@array/custom_icon_charging_symbol_values"
         android:title="@string/custom_icon_charging_symbol_title" />
 
-    <com.blaze.house.preferences.SystemSettingSwitchPreference
+    <com.scandium.home.preferences.SystemSettingSwitchPreference
         android:defaultValue="false"
         android:key="custom_charging_icon_switch"
         android:summary="@string/custom_battery_charging_icon_summary"
         android:title="@string/custom_battery_charging_icon_title" />
 
-    <com.blaze.house.preferences.SystemSettingSeekBarPreference
+    <com.scandium.home.preferences.SystemSettingSeekBarPreference
         android:defaultValue="0"
         android:dependency="custom_charging_icon_switch"
         android:key="custom_charging_icon_style"
         android:max="20"
         android:title="@string/custom_battery_charging_icon_style_title" />
 
-    <com.blaze.house.preferences.SystemSettingSeekBarPreference
+    <com.scandium.home.preferences.SystemSettingSeekBarPreference
         android:defaultValue="1"
         android:dependency="custom_charging_icon_switch"
         android:key="custom_charging_icon_ml"
@@ -44,7 +44,7 @@
         android:min="-8"
         settings:units="dp" />
 
-    <com.blaze.house.preferences.SystemSettingSeekBarPreference
+    <com.scandium.home.preferences.SystemSettingSeekBarPreference
         android:defaultValue="0"
         android:dependency="custom_charging_icon_switch"
         android:key="custom_charging_icon_mr"
@@ -53,7 +53,7 @@
         android:min="-8"
         settings:units="dp" />
 
-    <com.blaze.house.preferences.SystemSettingSeekBarPreference
+    <com.scandium.home.preferences.SystemSettingSeekBarPreference
         android:defaultValue="15"
         android:dependency="custom_charging_icon_switch"
         android:key="custom_charging_icon_wh"
@@ -63,60 +63,60 @@
 
     <PreferenceCategory android:title="@string/custom_battery_drawable_title">
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:defaultValue="false"
             android:key="evl_battery_scaled_perimeter_alpha"
             android:summary="@string/custom_battery_scaled_perimeter_alpha_summary"
             android:title="@string/custom_battery_scaled_perimeter_alpha_title" />
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:defaultValue="false"
             android:key="evl_battery_scaled_fill_alpha"
             android:summary="@string/custom_battery_scaled_fill_alpha_summary"
             android:title="@string/custom_battery_scaled_fill_alpha_title" />
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:defaultValue="false"
             android:key="evl_battery_custom_color"
             android:summary="@string/custom_battery_color_summary"
             android:title="@string/custom_battery_color_title" />
 
-        <com.blaze.house.colorpicker.ColorPickerPreference
+        <com.scandium.home.colorpicker.ColorPickerPreference
             android:summary="@string/sthumb_new_tint_picker_summary"
             android:key="evl_battery_charging_color"
             android:title="@string/custom_battery_charging_color_title"
             android:dependency="evl_battery_custom_color"
             android:defaultValue="0xff3ab74e" />
 
-        <com.blaze.house.colorpicker.ColorPickerPreference
+        <com.scandium.home.colorpicker.ColorPickerPreference
             android:summary="@string/sthumb_new_tint_picker_summary"
             android:dependency="evl_battery_custom_color"
             android:key="evl_battery_fill_color"
             android:title="@string/custom_battery_fill_color_title"
             android:defaultValue="0xffde57ce" />
 
-        <com.blaze.house.colorpicker.ColorPickerPreference
+        <com.scandium.home.colorpicker.ColorPickerPreference
             android:summary="@string/sthumb_new_tint_picker_summary"
             android:dependency="evl_battery_custom_color"
             android:key="evl_battery_fill_gradient_color"
             android:title="@string/custom_battery_fill_grad_color_title"
             android:defaultValue="0xff000000" />
 
-        <com.blaze.house.colorpicker.ColorPickerPreference
+        <com.scandium.home.colorpicker.ColorPickerPreference
             android:summary="@string/sthumb_new_tint_picker_summary"
             android:dependency="evl_battery_custom_color"
             android:key="evl_battery_powersave_color"
             android:title="@string/custom_battery_powersave_color_title"
             android:defaultValue="0xffff5722" />
 
-        <com.blaze.house.colorpicker.ColorPickerPreference
+        <com.scandium.home.colorpicker.ColorPickerPreference
             android:summary="@string/sthumb_new_tint_picker_summary"
             android:dependency="evl_battery_custom_color"
             android:key="evl_battery_powersavefill_color"
             android:title="@string/custom_battery_powersave_fill_color_title"
             android:defaultValue="0xfffdd015" />
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:defaultValue="false"
             android:key="evl_battery_rainbow_fill_color"
             android:summary="@string/custom_battery_rainbow_fill_summary"
@@ -125,25 +125,25 @@
 
     <PreferenceCategory android:title="@string/custom_battery_layout_title">
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:defaultValue="false"
             android:key="evl_battery_image_rotation"
             android:summary="@string/custom_battery_rotation_title"
             android:title="@string/custom_battery_rotation_title" />
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:key="FLIPLAYOUTBATRE"
             android:title="Flip The Battery"
             android:summary="to take to left the battery percentage "
             android:defaultValue="0" />
 
-        <com.blaze.house.preferences.SystemSettingSwitchPreference
+        <com.scandium.home.preferences.SystemSettingSwitchPreference
             android:defaultValue="false"
             android:key="evl_battery_custom_dimension"
             android:summary="@string/custom_battery_dimension_summary"
             android:title="@string/custom_battery_dimension_title" />
 
-        <com.blaze.house.preferences.SystemSettingSeekBarPreference
+        <com.scandium.home.preferences.SystemSettingSeekBarPreference
             android:defaultValue="0"
             android:dependency="evl_battery_custom_dimension"
             android:key="evl_battery_custom_margin_left"
@@ -152,7 +152,7 @@
             android:min="-20"
             settings:units="dp" />
 
-        <com.blaze.house.preferences.SystemSettingSeekBarPreference
+        <com.scandium.home.preferences.SystemSettingSeekBarPreference
             android:defaultValue="0"
             android:dependency="evl_battery_custom_dimension"
             android:key="evl_battery_custom_margin_right"
@@ -161,7 +161,7 @@
             android:min="-20"
             settings:units="dp" />
 
-        <com.blaze.house.preferences.SystemSettingSeekBarPreference
+        <com.scandium.home.preferences.SystemSettingSeekBarPreference
             android:defaultValue="0"
             android:dependency="evl_battery_custom_dimension"
             android:key="evl_battery_custom_margin_top"
@@ -169,7 +169,7 @@
             android:title="@string/custom_battery_top"
             settings:units="dp" />
 
-        <com.blaze.house.preferences.SystemSettingSeekBarPreference
+        <com.scandium.home.preferences.SystemSettingSeekBarPreference
             android:defaultValue="0"
             android:dependency="evl_battery_custom_dimension"
             android:key="evl_battery_custom_margin_bottom"
@@ -177,7 +177,7 @@
             android:title="@string/custom_battery_bottom"
             settings:units="dp" />
 
-        <com.blaze.house.preferences.SystemSettingSeekBarPreference
+        <com.scandium.home.preferences.SystemSettingSeekBarPreference
             android:defaultValue="20"
             android:dependency="evl_battery_custom_dimension"
             android:key="evl_battery_custom_scale_height"
@@ -185,7 +185,7 @@
             android:title="@string/custom_battery_height"
             settings:units="dp" />
 
-        <com.blaze.house.preferences.SystemSettingSeekBarPreference
+        <com.scandium.home.preferences.SystemSettingSeekBarPreference
             android:defaultValue="28"
             android:dependency="evl_battery_custom_dimension"
             android:key="evl_battery_custom_scale_width"
@@ -193,5 +193,4 @@
             android:title="@string/custom_battery_width"
             settings:units="dp" />
     </PreferenceCategory>
-
 </PreferenceScreen>
