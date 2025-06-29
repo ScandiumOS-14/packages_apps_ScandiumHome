@@ -42,7 +42,7 @@
     <string name="system_category">System</string>
     <string name="lockscreen_category">Lockscreen</string>
     <string name="themes_category">Themes</string>
-    <string name="build_tweaks_summary_title">Get Amazed with ScandiumOS !!!</string>
+    <string name="build_tweaks_summary_title">Get Started with ScandiumOS !!!</string>
     <string name="listview">ListView</string>
     <string name="icons_category">Icon Options</string>
     <string name="fingerprint_category">Fingerprint</string>
@@ -502,6 +502,10 @@
     <!-- Unlock FPS for specific games -->
     <string name="use_games_spoof_title">Unlock higher FPS in games</string>
     <string name="use_games_spoof_summary">Spoof your device as different model for specific games to unlock higher FPS</string>
+
+    <!-- Ram Boost -->
+    <string name="ramboost_title">Enable Ram Boost</string>
+    <string name="ramboost_summary">Get a performance boost when you need it most, like during gaming.</string>
 
     <!-- Netflix Spooft -->
     <string name="netflix_spoof_title">Netflix spoof</string>
