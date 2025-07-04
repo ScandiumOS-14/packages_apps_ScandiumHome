@@ -267,7 +267,6 @@
     <string name="less_boring_heads_up_title">Priority heads up</string>
     <string name="less_boring_heads_up_summary">Show heads up only for calls, messages, alarms, reminders and priority conversations</string>
 
-
     <!-- QS Tiles haptic -->
     <string name="qs_tiles_haptic_feedback_title">Vibrate on touching QS tiles</string>    
 
@@ -501,10 +500,6 @@
     <!-- Unlock FPS for specific games -->
     <string name="use_games_spoof_title">Unlock higher FPS in games</string>
     <string name="use_games_spoof_summary">Spoof your device as different model for specific games to unlock higher FPS</string>
-
-    <!-- Ram Boost -->
-    <string name="ramboost_title">Enable Ram Boost</string>
-    <string name="ramboost_summary">Get a performance boost when you need it most, like during gaming.</string>
 
     <!-- Netflix Spooft -->
     <string name="netflix_spoof_title">Netflix spoof</string>

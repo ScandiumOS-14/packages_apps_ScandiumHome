@@ -145,13 +145,7 @@
         android:key="use_games_spoof"
         android:title="@string/use_games_spoof_title"
         android:summary="@string/use_games_spoof_summary" />
-
-    <SwitchPreference
-        android:key="persist.sys.ramboost_enabled"
-        android:title="@string/ramboost_title"
-        android:summary="@string/ramboost_summary"
-        android:defaultValue="false" />
-	    
+        
     </PreferenceCategory>
 
      <!-- Netflix -->
